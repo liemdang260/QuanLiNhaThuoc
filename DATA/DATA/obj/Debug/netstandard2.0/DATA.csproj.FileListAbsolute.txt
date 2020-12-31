@@ -1,0 +1,8 @@
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\bin\Debug\netstandard2.0\DATA.deps.json
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\bin\Debug\netstandard2.0\DATA.dll
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\bin\Debug\netstandard2.0\DATA.pdb
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.AssemblyInfoInputs.cache
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.AssemblyInfo.cs
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.csproj.CoreCompileInputs.cache
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.dll
+E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.pdb
