@@ -6,3 +6,12 @@ E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.Assemb
 E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.csproj.CoreCompileInputs.cache
 E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.dll
 E:\cnpm\Doancuoiki\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.pdb
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\bin\Debug\netstandard2.0\DATA.deps.json
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\bin\Debug\netstandard2.0\DATA.dll
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\bin\Debug\netstandard2.0\DATA.pdb
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.csprojAssemblyReference.cache
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.AssemblyInfoInputs.cache
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.AssemblyInfo.cs
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.csproj.CoreCompileInputs.cache
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.dll
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\DATA\DATA\obj\Debug\netstandard2.0\DATA.pdb
