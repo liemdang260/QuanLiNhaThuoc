@@ -31,6 +31,7 @@ namespace GUI
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_banhang = new System.Windows.Forms.TabPage();
+            this.btn_huyhoadon = new System.Windows.Forms.Button();
             this.btn_themhoadon = new System.Windows.Forms.Button();
             this.cbx_chonca = new System.Windows.Forms.ComboBox();
             this.btn_donmau = new System.Windows.Forms.Button();
@@ -125,7 +126,6 @@ namespace GUI
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_nhanhieu = new System.Windows.Forms.Label();
             this.pic_logo = new System.Windows.Forms.PictureBox();
-            this.btn_huyhoadon = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_banhang.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -184,6 +184,18 @@ namespace GUI
             this.tabPage_banhang.TabIndex = 0;
             this.tabPage_banhang.Text = "Bán hàng";
             this.tabPage_banhang.UseVisualStyleBackColor = true;
+            // 
+            // btn_huyhoadon
+            // 
+            this.btn_huyhoadon.AutoSize = true;
+            this.btn_huyhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_huyhoadon.Location = new System.Drawing.Point(1120, 48);
+            this.btn_huyhoadon.Name = "btn_huyhoadon";
+            this.btn_huyhoadon.Size = new System.Drawing.Size(222, 35);
+            this.btn_huyhoadon.TabIndex = 10;
+            this.btn_huyhoadon.Text = "Hủy hóa đơn";
+            this.btn_huyhoadon.UseVisualStyleBackColor = true;
+            this.btn_huyhoadon.Click += new System.EventHandler(this.btn_huyhoadon_Click);
             // 
             // btn_themhoadon
             // 
@@ -433,10 +445,14 @@ namespace GUI
             // 
             // tbx_timkh
             // 
+            this.tbx_timkh.ForeColor = System.Drawing.Color.Silver;
             this.tbx_timkh.Location = new System.Drawing.Point(0, 0);
             this.tbx_timkh.Name = "tbx_timkh";
             this.tbx_timkh.Size = new System.Drawing.Size(259, 34);
             this.tbx_timkh.TabIndex = 8;
+            this.tbx_timkh.Text = "Tìm khách hàng";
+            this.tbx_timkh.Enter += new System.EventHandler(this.tbx_timkh_Enter);
+            this.tbx_timkh.Leave += new System.EventHandler(this.tbx_timkh_Leave);
             // 
             // cbx_chonnv
             // 
@@ -451,9 +467,19 @@ namespace GUI
             // nrc_sl
             // 
             this.nrc_sl.Location = new System.Drawing.Point(385, 6);
+            this.nrc_sl.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nrc_sl.Name = "nrc_sl";
             this.nrc_sl.Size = new System.Drawing.Size(88, 34);
             this.nrc_sl.TabIndex = 3;
+            this.nrc_sl.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btn_timsp
             // 
@@ -467,10 +493,17 @@ namespace GUI
             // 
             // tbx_timsp
             // 
+            this.tbx_timsp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbx_timsp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.tbx_timsp.ForeColor = System.Drawing.Color.Silver;
             this.tbx_timsp.Location = new System.Drawing.Point(14, 6);
             this.tbx_timsp.Name = "tbx_timsp";
             this.tbx_timsp.Size = new System.Drawing.Size(301, 34);
             this.tbx_timsp.TabIndex = 1;
+            this.tbx_timsp.Text = "Tìm sản phẩm";
+            this.tbx_timsp.Enter += new System.EventHandler(this.tbx_timsp_Enter);
+            this.tbx_timsp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbx_timsp_KeyDown);
+            this.tbx_timsp.Leave += new System.EventHandler(this.tbx_timsp_Leave);
             // 
             // tabcontrl_hoadon
             // 
@@ -515,7 +548,6 @@ namespace GUI
             this.col_sp.DisplayIndex = 1;
             this.col_sp.Text = "Mã sp";
             this.col_sp.Width = 100;
-            this.col_tensp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // col_tensp
             // 
@@ -1147,17 +1179,6 @@ namespace GUI
             this.pic_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_logo.TabIndex = 0;
             this.pic_logo.TabStop = false;
-            // 
-            // btn_huyhoadon
-            // 
-            this.btn_huyhoadon.AutoSize = true;
-            this.btn_huyhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_huyhoadon.Location = new System.Drawing.Point(1120, 48);
-            this.btn_huyhoadon.Name = "btn_huyhoadon";
-            this.btn_huyhoadon.Size = new System.Drawing.Size(222, 35);
-            this.btn_huyhoadon.TabIndex = 10;
-            this.btn_huyhoadon.Text = "Hủy hóa đơn";
-            this.btn_huyhoadon.UseVisualStyleBackColor = true;
             // 
             // MH_BanHang
             // 

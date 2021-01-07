@@ -78,6 +78,7 @@ namespace GUI
             this.tabcontrl_hoadon.TabPages.Add(new_tab);
             new_tab.Text = "Hóa đơn " + ++tab_count;
             SetNewtab(new_tab, "tabpage_BH_hd" + tab_count);
+            this.tabcontrl_hoadon.SelectedTab = new_tab;
         }
 
         /// <summary>
@@ -90,12 +91,14 @@ namespace GUI
             new_tab.Padding = new System.Windows.Forms.Padding(3);
             new_tab.Size = new System.Drawing.Size(899, 590);
             new_tab.UseVisualStyleBackColor = true;
-            new_tab.Show();
             ListView new_lst_hoadon = new ListView();
             new_tab.Controls.Add(new_lst_hoadon);
             SetListHD(new_lst_hoadon);
         }
-
+        /// <summary>
+        /// Cai đặt listview mới cho tab hóa đơn
+        /// </summary>
+        /// <param name="lst_hoadon"></param>
         private void SetListHD(ListView lst_hoadon)
         {
             lst_hoadon.Columns.Add("STT", 70, HorizontalAlignment.Center);
@@ -111,6 +114,69 @@ namespace GUI
             lst_hoadon.Size = new System.Drawing.Size(903, 590);
             lst_hoadon.UseCompatibleStateImageBehavior = false;
             lst_hoadon.View = System.Windows.Forms.View.Details;
+
+        }
+        /// <summary>
+        /// Hủy hóa đơn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_huyhoadon_Click(object sender, EventArgs e)
+        {
+            this.tabcontrl_hoadon.TabPages.Remove(tabcontrl_hoadon.SelectedTab);
+            tab_count--;
+            byte i = 1;
+            foreach(TabPage tp in this.tabcontrl_hoadon.TabPages)
+            {
+                if(i <= tab_count)
+                    tp.Text = "Hóa đơn " + i;
+                i++;
+            }
+            this.tabcontrl_hoadon.SelectedIndex = tab_count - 1;
+        }
+
+        private void tbx_timsp_Enter(object sender, EventArgs e)
+        {
+            this.tbx_timsp.Text = "";
+            this.tbx_timsp.ForeColor = Color.Black;
+        }
+
+        private void tbx_timsp_Leave(object sender, EventArgs e)
+        {
+            this.tbx_timsp.Text = "Tìm sản phẩm";
+            this.tbx_timsp.ForeColor = Color.Silver;
+        }
+
+        //public void timkiem()
+        //{
+        //    this.tbx_timsp.AutoCompleteCustomSource = 
+        //}
+
+        private void tbx_timkh_Enter(object sender, EventArgs e)
+        {
+            this.tbx_timkh.Text = "";
+            this.tbx_timkh.ForeColor = Color.Black;
+        }
+
+        private void tbx_timkh_Leave(object sender, EventArgs e)
+        {
+
+            this.tbx_timkh.Text = "Tìm khách hàng";
+            this.tbx_timkh.ForeColor = Color.Silver;
+        }
+
+
+        private void tbx_timsp_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "1";
+                item.SubItems.Add("1234");
+                this.tabcontrl_hoadon.
+                
+               
+            }
 
         }
     }
