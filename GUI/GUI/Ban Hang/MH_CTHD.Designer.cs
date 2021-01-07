@@ -32,14 +32,14 @@
             this.lb_mahd = new System.Windows.Forms.Label();
             this.lb_cthd = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbx_tienthua = new System.Windows.Forms.TextBox();
             this.lb_tienthua = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tbx_khachdatra = new System.Windows.Forms.TextBox();
+            this.lb_khachdatra = new System.Windows.Forms.Label();
+            this.tbx_giamgia = new System.Windows.Forms.TextBox();
+            this.lb_giamgia = new System.Windows.Forms.Label();
+            this.tbx_conlai = new System.Windows.Forms.TextBox();
+            this.lb_conlai = new System.Windows.Forms.Label();
             this.rtbx_ghichu = new System.Windows.Forms.RichTextBox();
             this.lb_ghichu = new System.Windows.Forms.Label();
             this.tbx_tennv = new System.Windows.Forms.TextBox();
@@ -59,6 +59,8 @@
             this.lb_makh = new System.Windows.Forms.Label();
             this.tbx_tenkh = new System.Windows.Forms.TextBox();
             this.lb_tenkh = new System.Windows.Forms.Label();
+            this.tbx_tongtien = new System.Windows.Forms.TextBox();
+            this.lb_tongtien = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -98,14 +100,16 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.tbx_tongtien);
+            this.panel2.Controls.Add(this.lb_tongtien);
+            this.panel2.Controls.Add(this.tbx_tienthua);
             this.panel2.Controls.Add(this.lb_tienthua);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.tbx_khachdatra);
+            this.panel2.Controls.Add(this.lb_khachdatra);
+            this.panel2.Controls.Add(this.tbx_giamgia);
+            this.panel2.Controls.Add(this.lb_giamgia);
+            this.panel2.Controls.Add(this.tbx_conlai);
+            this.panel2.Controls.Add(this.lb_conlai);
             this.panel2.Controls.Add(this.rtbx_ghichu);
             this.panel2.Controls.Add(this.lb_ghichu);
             this.panel2.Controls.Add(this.tbx_tennv);
@@ -119,19 +123,19 @@
             this.panel2.Controls.Add(this.lb_makh);
             this.panel2.Controls.Add(this.tbx_tenkh);
             this.panel2.Controls.Add(this.lb_tenkh);
-            this.panel2.Location = new System.Drawing.Point(12, 118);
+            this.panel2.Location = new System.Drawing.Point(12, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(958, 617);
+            this.panel2.Size = new System.Drawing.Size(958, 662);
             this.panel2.TabIndex = 2;
             // 
-            // textBox4
+            // tbx_tienthua
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(521, 569);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(146, 30);
-            this.textBox4.TabIndex = 24;
+            this.tbx_tienthua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_tienthua.Location = new System.Drawing.Point(521, 569);
+            this.tbx_tienthua.Name = "tbx_tienthua";
+            this.tbx_tienthua.ReadOnly = true;
+            this.tbx_tienthua.Size = new System.Drawing.Size(146, 30);
+            this.tbx_tienthua.TabIndex = 24;
             // 
             // lb_tienthua
             // 
@@ -144,65 +148,65 @@
             this.lb_tienthua.Text = "Tiền thừa:";
             this.lb_tienthua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // tbx_khachdatra
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(521, 530);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(146, 30);
-            this.textBox3.TabIndex = 22;
+            this.tbx_khachdatra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_khachdatra.Location = new System.Drawing.Point(521, 530);
+            this.tbx_khachdatra.Name = "tbx_khachdatra";
+            this.tbx_khachdatra.ReadOnly = true;
+            this.tbx_khachdatra.Size = new System.Drawing.Size(146, 30);
+            this.tbx_khachdatra.TabIndex = 22;
             // 
-            // label4
+            // lb_khachdatra
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(370, 532);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 25);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Khách đã trả:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_khachdatra.AutoSize = true;
+            this.lb_khachdatra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_khachdatra.Location = new System.Drawing.Point(370, 532);
+            this.lb_khachdatra.Name = "lb_khachdatra";
+            this.lb_khachdatra.Size = new System.Drawing.Size(142, 25);
+            this.lb_khachdatra.TabIndex = 21;
+            this.lb_khachdatra.Text = "Khách đã trả:";
+            this.lb_khachdatra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // tbx_giamgia
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(796, 530);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(146, 30);
-            this.textBox2.TabIndex = 20;
+            this.tbx_giamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_giamgia.Location = new System.Drawing.Point(796, 568);
+            this.tbx_giamgia.Name = "tbx_giamgia";
+            this.tbx_giamgia.ReadOnly = true;
+            this.tbx_giamgia.Size = new System.Drawing.Size(146, 30);
+            this.tbx_giamgia.TabIndex = 20;
             // 
-            // label3
+            // lb_giamgia
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(679, 530);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 25);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Giảm giá:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_giamgia.AutoSize = true;
+            this.lb_giamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_giamgia.Location = new System.Drawing.Point(679, 568);
+            this.lb_giamgia.Name = "lb_giamgia";
+            this.lb_giamgia.Size = new System.Drawing.Size(104, 25);
+            this.lb_giamgia.TabIndex = 19;
+            this.lb_giamgia.Text = "Giảm giá:";
+            this.lb_giamgia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // tbx_conlai
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(796, 572);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(146, 30);
-            this.textBox1.TabIndex = 18;
+            this.tbx_conlai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_conlai.Location = new System.Drawing.Point(796, 610);
+            this.tbx_conlai.Name = "tbx_conlai";
+            this.tbx_conlai.ReadOnly = true;
+            this.tbx_conlai.Size = new System.Drawing.Size(146, 30);
+            this.tbx_conlai.TabIndex = 18;
             // 
-            // label2
+            // lb_conlai
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(679, 574);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 25);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Tổng tiền:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_conlai.AutoSize = true;
+            this.lb_conlai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_conlai.Location = new System.Drawing.Point(679, 612);
+            this.lb_conlai.Name = "lb_conlai";
+            this.lb_conlai.Size = new System.Drawing.Size(87, 25);
+            this.lb_conlai.TabIndex = 17;
+            this.lb_conlai.Text = "Còn lại:";
+            this.lb_conlai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rtbx_ghichu
             // 
@@ -377,6 +381,26 @@
             this.lb_tenkh.Text = "Tên khách hàng:";
             this.lb_tenkh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tbx_tongtien
+            // 
+            this.tbx_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_tongtien.Location = new System.Drawing.Point(796, 529);
+            this.tbx_tongtien.Name = "tbx_tongtien";
+            this.tbx_tongtien.ReadOnly = true;
+            this.tbx_tongtien.Size = new System.Drawing.Size(146, 30);
+            this.tbx_tongtien.TabIndex = 26;
+            // 
+            // lb_tongtien
+            // 
+            this.lb_tongtien.AutoSize = true;
+            this.lb_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tongtien.Location = new System.Drawing.Point(679, 529);
+            this.lb_tongtien.Name = "lb_tongtien";
+            this.lb_tongtien.Size = new System.Drawing.Size(110, 25);
+            this.lb_tongtien.TabIndex = 25;
+            this.lb_tongtien.Text = "Tổng tiền:";
+            this.lb_tongtien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MH_CTHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -419,13 +443,15 @@
         private System.Windows.Forms.ColumnHeader col_sl;
         private System.Windows.Forms.ColumnHeader col_dongia;
         private System.Windows.Forms.ColumnHeader col_thanhtien;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbx_conlai;
+        private System.Windows.Forms.Label lb_conlai;
+        private System.Windows.Forms.TextBox tbx_giamgia;
+        private System.Windows.Forms.Label lb_giamgia;
+        private System.Windows.Forms.TextBox tbx_tienthua;
         private System.Windows.Forms.Label lb_tienthua;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbx_khachdatra;
+        private System.Windows.Forms.Label lb_khachdatra;
+        private System.Windows.Forms.TextBox tbx_tongtien;
+        private System.Windows.Forms.Label lb_tongtien;
     }
 }

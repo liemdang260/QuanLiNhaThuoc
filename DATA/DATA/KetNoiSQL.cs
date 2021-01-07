@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.Common;
+using System.Data;
 
-namespace WindowsFormsApp2
+namespace DATA
 {
     public class KetNoiSQL
     {
@@ -38,33 +39,20 @@ namespace WindowsFormsApp2
         /// dung cho ham select
         /// </summary>
         /// <param name="sql_query"></param>
-        public static void Query(string sql_query)//select
+        public static DataTable Query(string sql_query)//select
         {
             using (SqlConnection connect = GetDBConnection())
             {
                 //Console.OutputEncoding = Encoding.UTF8;
                 if (!KiemTraKN(connect))
-                    return;
+                    return null;
                 connect.Open();
+                DataTable tb = new DataTable();
                 try
                 {
-                    SqlCommand cmd = new SqlCommand(sql_query,connect);
-
-                    using (DbDataReader rd = cmd.ExecuteReader())
-                    {
-                        if (rd.HasRows)
-                        {
-                            while (rd.Read())
-                            {
-                                int index_mahd = rd.GetOrdinal("MAHD");
-                                long mahd = Convert.ToInt64(rd.GetValue(index_mahd));
-
-                                int index_makh = rd.GetOrdinal("MAKH");
-                                long makh = Convert.ToInt32(rd.GetValue(index_makh));
-                                Console.WriteLine(mahd + "\t" + makh);
-                            }
-                        }
-                    }
+                    SqlDataAdapter adt = new SqlDataAdapter();
+                    adt.SelectCommand = new SqlCommand(sql_query, connect);
+                    adt.Fill(tb);
                 }
                 catch (Exception ex)
                 {
@@ -75,6 +63,7 @@ namespace WindowsFormsApp2
                     connect.Close();
                     connect.Dispose();
                 }
+                return tb;
             }
 
         }

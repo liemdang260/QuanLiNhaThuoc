@@ -12,3 +12,7 @@ D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\obj\Debug\GUI.exe
 D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\obj\Debug\GUI.pdb
 D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\obj\Debug\GUI.MH_BanHang.resources
 D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\obj\Debug\GUI.MH_CTHD.resources
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\obj\Debug\GUI.MH_QuanLy.resources
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\bin\Debug\DATA.dll
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\bin\Debug\DATA.pdb
+D:\Công nghệ phần mềm\QuanLiNhaThuoc\GUI\GUI\obj\Debug\GUI.MH_Kho.resources
